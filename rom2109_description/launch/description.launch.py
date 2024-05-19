@@ -13,7 +13,8 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
     
     urdf_pkg = get_package_share_directory('rom2109_description')
-    urdf_path= os.path.join(urdf_pkg, 'urdf/raw', "rom2109_tall.urdf")
+    #urdf_path= os.path.join(urdf_pkg, 'urdf/raw', "rom2109_tall.urdf")
+    urdf_path= os.path.join(urdf_pkg, 'urdf', "urdf.urdf")
     urdf = open(urdf_path).read()
 
     robot_state_publisher_node = Node(
