@@ -30,7 +30,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/base_link.STL" />
+          filename="package://rom2109_description/meshes/tall/base_link.stl" />
       </geometry>
       <material
         name="">
@@ -44,7 +44,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/base_link.STL" />
+          filename="package://rom2109_description/meshes/tall/base_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -70,7 +70,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/right_wheel.STL" />
+          filename="package://rom2109_description/meshes/tall/right_wheel.stl" />
       </geometry>
       <material
         name="">
@@ -84,7 +84,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/right_wheel.STL" />
+          filename="package://rom2109_description/meshes/tall/right_wheel.stl" />
       </geometry>
     </collision>
   </link>
@@ -123,7 +123,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/left_wheel.STL" />
+          filename="package://rom2109_description/meshes/tall/left_wheel.stl" />
       </geometry>
       <material
         name="">
@@ -137,7 +137,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/left_wheel.STL" />
+          filename="package://rom2109_description/meshes/tall/left_wheel.stl" />
       </geometry>
     </collision>
   </link>
@@ -176,7 +176,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/plate1.STL" />
+          filename="package://rom2109_description/meshes/tall/plate1.stl" />
       </geometry>
       <material
         name="">
@@ -190,7 +190,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/plate1.STL" />
+          filename="package://rom2109_description/meshes/tall/plate1.stl" />
       </geometry>
     </collision>
   </link>
@@ -229,7 +229,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/camera.STL" />
+          filename="package://rom2109_description/meshes/tall/camera.stl" />
       </geometry>
       <material
         name="">
@@ -243,7 +243,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/camera.STL" />
+          filename="package://rom2109_description/meshes/tall/camera.stl" />
       </geometry>
     </collision>
   </link>
@@ -282,7 +282,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/lidar.STL" />
+          filename="package://rom2109_description/meshes/tall/lidar.stl" />
       </geometry>
       <material
         name="">
@@ -296,7 +296,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/lidar.STL" />
+          filename="package://rom2109_description/meshes/tall/lidar.stl" />
       </geometry>
     </collision>
   </link>
@@ -335,7 +335,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/plate2.STL" />
+          filename="package://rom2109_description/meshes/tall/plate2.stl" />
       </geometry>
       <material
         name="">
@@ -349,7 +349,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/plate2.STL" />
+          filename="package://rom2109_description/meshes/tall/plate2.stl" />
       </geometry>
     </collision>
   </link>
@@ -388,7 +388,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/plate3.STL" />
+          filename="package://rom2109_description/meshes/tall/plate3.stl" />
       </geometry>
       <material
         name="">
@@ -402,7 +402,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rom2109_description/meshes/tall/plate3.STL" />
+          filename="package://rom2109_description/meshes/tall/plate3.stl" />
       </geometry>
     </collision>
   </link>

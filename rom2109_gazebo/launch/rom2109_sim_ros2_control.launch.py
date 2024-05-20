@@ -15,7 +15,7 @@ def generate_launch_description():
     description_pkg = get_package_share_directory('rom2109_description')
     default_world_path = os.path.join(gazebo_pkg, 'worlds', 'new.world')
 
-    urdf_file = os.path.join(description_pkg,'urdf', 'urdf.urdf')
+    # urdf_file = os.path.join(description_pkg,'urdf', 'urdf.urdf')
     
     bot = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
@@ -65,8 +65,8 @@ def generate_launch_description():
     spawn_robot_node = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
-        #arguments=['-entity', 'rom2109_tall', '-topic', '/robot_description',
-        arguments=["-database", "rom2109_tall", '-entity', 'rom2109',
+        arguments=['-entity', 'rom2109_tall', '-topic', '/robot_description',
+        # arguments=["-database", "rom2109_tall", '-entity', 'rom2109_tall',
         # arguments=['-file', urdf_file, '-entity', 'rom2109_tall',
         "-x", '0.0',
         "-y", '0.0',
@@ -74,13 +74,16 @@ def generate_launch_description():
         output='screen'
     )
 
+ 
+
+
     return LaunchDescription(
         [
             DeclareLaunchArgument('open_rviz', default_value='true', description='Open RViz.'),
             bot,
+            spawn_robot_node,
             gazebo_launch,
             rviz_node,
-            spawn_robot_node,
-            #controller,
+            controller,
         ]
     )
