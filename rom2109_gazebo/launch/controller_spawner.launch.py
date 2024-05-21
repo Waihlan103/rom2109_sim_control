@@ -17,13 +17,16 @@ def generate_launch_description():
         package="controller_manager",
         executable="spawner",
         arguments=["diff_cont"],
+        #arguments=["diff_cont", "--controller-manager", "/controller_manager"],
     )
 
     joint_broad_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=["joint_broad"],
+        #arguments=["joint_board", "-c", "/controller_manager"],
     )
+
 
     twist_mux_params = os.path.join(get_package_share_directory('rom2109_gazebo'), 'config', 'twist_mux.yaml')
     twist_mux_node = Node(

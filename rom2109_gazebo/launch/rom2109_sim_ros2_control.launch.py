@@ -84,6 +84,6 @@ def generate_launch_description():
             spawn_robot_node,
             gazebo_launch,
             rviz_node,
-            controller,
+            #controller,
         ]
     )

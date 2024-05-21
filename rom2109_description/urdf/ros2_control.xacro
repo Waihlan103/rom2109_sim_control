@@ -25,8 +25,8 @@
     </ros2_control>
 
     <gazebo>
-        <plugin name="gazebo_ros2_control" filename="gazebo_ros2_control.so">
-            <parameters>$(find rom2109_description)/config/my_controllers.yaml</parameters>
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+            <parameters>$(find black_donut_description)/config/my_controllers.yaml</parameters>
         </plugin>
     </gazebo>
 
