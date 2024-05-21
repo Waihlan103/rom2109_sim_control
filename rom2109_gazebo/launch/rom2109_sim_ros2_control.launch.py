@@ -65,8 +65,8 @@ def generate_launch_description():
     spawn_robot_node = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
-        arguments=['-entity', 'rom2109_tall', '-topic', '/robot_description',
-        # arguments=["-database", "rom2109_tall", '-entity', 'rom2109_tall',
+        # arguments=['-entity', 'rom2109_tall', '-topic', '/robot_description',
+        arguments=["-database", "rom2109_tall", '-entity', 'rom2109_tall',
         # arguments=['-file', urdf_file, '-entity', 'rom2109_tall',
         "-x", '0.0',
         "-y", '0.0',

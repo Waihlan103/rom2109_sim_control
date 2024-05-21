@@ -36,7 +36,7 @@ def generate_launch_description():
         package="joint_state_publisher",
         executable="joint_state_publisher",
     )
-
+    
     # rviz_node = Node(
     #     package='rviz2',
     #     executable='rviz2',
