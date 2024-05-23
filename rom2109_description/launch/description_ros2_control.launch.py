@@ -31,12 +31,12 @@ def generate_launch_description():
         #parameters=[{"robot_description": urdf, 'use_sim_time': use_sim_time}],
     )
 
-    # joint_state_node = Node(
-    #     name="joint_state_publisher",
-    #     package="joint_state_publisher",
-    #     executable="joint_state_publisher",
-    # )
-
+    joint_state_node = Node(
+        name="joint_state_publisher",
+        package="joint_state_publisher",
+        executable="joint_state_publisher",
+    )
+    
     # rviz_node = Node(
     #     package='rviz2',
     #     executable='rviz2',

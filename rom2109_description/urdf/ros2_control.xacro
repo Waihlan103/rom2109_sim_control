@@ -26,17 +26,7 @@
 
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-            <robot_param>robot_description</robot_param>
-            <robot_param_node>robot_state_publisher</robot_param_node>
-            <parameters>$(find rom2109_description)/config/my_controllers.yaml</parameters>
-
-            <!-- Output -->
-            <odometry_frame>odom</odometry_frame>
-            <robot_base_frame>base_footprint</robot_base_frame>
-
-            <publish_odom>true</publish_odom>
-            <publish_odom_tf>true</publish_odom_tf>
-            <publish_wheel_tf>true</publish_wheel_tf>
+            <parameters>$(find black_donut_description)/config/my_controllers.yaml</parameters>
         </plugin>
     </gazebo>
 

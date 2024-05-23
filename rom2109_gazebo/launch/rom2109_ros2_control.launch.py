@@ -56,19 +56,20 @@ def generate_launch_description():
     spawn_robot_node = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
-        arguments=['-database', 'rom2109_tall_ros', '-entity', 'rom2109_tall_ros',
-        # arguments=['-file', urdf_file, '-entity', 'rom2109_tall_ros',
+        arguments=['-entity', 'rom2109', '-topic', '/robot_description',
+        #arguments=['-database', 'rom2109_tall_ros', '-entity', 'rom2109_tall_ros',
+        #arguments=['-file', urdf_file, '-entity', 'rom2109',
                    "-x", '0.0',
                    "-y", '0.0',
                    "-z", '0.3'],
         output='screen'
     )
     
-    joystick_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(joy_pkg, 'launch', 'joystick.launch.py')]),
-        launch_arguments={'use_sim_time': 'true'}.items(),
-        #condition=IfCondition('use_joystick')
-    )
+    # joystick_launch = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource([os.path.join(joy_pkg, 'launch', 'joystick.launch.py')]),
+    #     launch_arguments={'use_sim_time': 'true'}.items(),
+    #     #condition=IfCondition('use_joystick')
+    # )
 
     return LaunchDescription(
         [
@@ -79,6 +80,5 @@ def generate_launch_description():
             gazebo_launch,
             rviz_node,
             spawn_robot_node,
-            joystick_launch,
         ]
     )
